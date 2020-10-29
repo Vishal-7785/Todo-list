@@ -7,45 +7,44 @@ body{
     /* height: 90%; */
     margin-top:5%;
     margin-left:25%;
-    background-color:#ee6f57;
-
+    background-color:#f4abc4;
+    border: 3PX dashed black;
+    border-radius: 10%;
 }
-#todo-icon{
+.todo-icon{
     height:15%;
     width:17%;
     margin-left:3%;
     margin-top: -5%;
     border-radius: 50%;
 }
-#heading{
+.heading{
     display: inline-block;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top:5%;
     color: #1a1c20;
-    font-size: 3.5rem;
+    font-size: 4rem;
+    font-weight: 700;
     text-decoration: underline;
 }
 #heading:hover{
     color: #0278ae;
 }
-@keyframes changeshape{
-    0%{
-        border-radius: 0%;
-    }
-    25%{
-        border-radius: 12.50%;
-    }
-    50%{
-        border-radius: 25%;
-    }
-    100%{
-        border-radius: 50%;
-    }
-}
 #task-container{
     height: 80%;
     margin: 5%;
-    border:2px solid black;
+ 
+}
+.your-tasks{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-left: 30%;
+    color: #000000;
+    text-decoration: underline;
+}
+.your-tasks:hover{
+    color: #595b83;
+    transition: color .5s ease-in-out;
 }
 .personal-task{
     display: inline-block;
@@ -54,18 +53,11 @@ body{
     height: 30%;
     width: 35%;
     border:2px solid black;
-    background-color: #132743;
+    background-color: #595b83;
+    border-radius: 50%;
     /* animation: changeshape .5s ease 100 alternate; */
 }
-#personal-task:hover{
-    height: 35%;
-    width: 40%;
-    background-color: #373a40;
-    transform: translate(4%,4%);
-    transition: height width .5s ease-in-out ;
-    border-radius: 50%;
-}
-#school-task{
+.school-task{
     display: inline-block;
     margin-top:5%;
     margin-left:10%;
@@ -73,8 +65,10 @@ body{
     width: 35%;
     border:2px solid black;
     background-color: #373a40;
+    border-radius: 50%;
+
 }
-#work-task{
+.work-task{
     display: inline-block;
     margin-top:5%;
     margin-left:10%;
@@ -82,8 +76,28 @@ body{
     width: 35%;
     border:2px solid black;
     background-color: #213e3b;
+    border-radius: 50%;
+
 }
-#other-task{
+.work-heading{
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 5%;
+    color: blanchedalmond;
+    text-decoration: underline;
+    font-size: 1.7rem;
+}
+.work-heading:hover{
+    color:#060930;
+    transition: color .5s ease-in-out;
+}
+#work-image{
+    height:50%;
+    width:40%;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.other-task{
     display: inline-block;
     margin-top:5%;
     margin-left:10%;
@@ -91,6 +105,8 @@ body{
     width: 35%;
     border:2px solid black;
     background-color: #0278ae;
+    border-radius: 50%;
+
 }
 #add-task-button{
     margin-left: 35%;

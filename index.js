@@ -9,21 +9,14 @@ app.set('views',path.join(__dirname,'views'));
 app.use(express.urlencoded());
 app.use(express.static('assets'))
 
-app.get('/',function(req,res){
-    Todo.find({},function(err,todo){
-        if(err){
-            console.log(`Error in ruuning the server : ${err}`);
-            return;
-        }
-        return res.render('home',{
-            title: "My Todo APP",
-            TODO: todo
-            });
-    });
 
-});
- app.get('/profile',function(req,res){
+ app.get('/',function(req,res){
     return res.render('profile',{
+        title: "Todo profile"
+    });
+ });
+ app.get('/profile',function(req,res){
+    return res.render('newTask',{
         title: "Todo profile"
     });
  });
