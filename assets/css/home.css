@@ -1,0 +1,133 @@
+#container{
+    height:150%;
+    width:50%;
+    margin-left: 25%;
+    margin-top: 7%;
+   background-color: #333456;
+}
+#heading{
+    display:inline-block;
+    margin-left:35%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    color:brown;
+    font-size: 2rem;
+}
+#header{
+    margin-top:10%;
+}
+#FORM{
+    display: block;
+    width: 100%;
+}
+#date{
+    display: inline-block;
+    height:7.5%;
+    width:53.9%;
+    margin-left:0%;
+    margin-top: -7%;
+    background-color:rgb(47, 50, 255);
+    color:black;
+    font-size: 1.8rem;
+}
+.btn{
+    width:100%;
+    margin-left:2px;
+    margin-top: -4px;
+}
+#add{
+    margin-top: 2%;
+    margin-left:23%;
+    color:white;
+    background-color: brown;
+    height:7%;
+    width:25%;
+    font-size: 1.6rem;
+}
+#delete{
+    margin-left:2%;
+    margin-top: 10px;
+    color:white;
+    background-color: black;
+    height:7%;
+    width:25%;
+    font-size: 1.6rem;
+
+}
+#tasks{
+    display: inline-block;
+    margin-top:0%;
+    height:10%;
+    width:100%;
+}
+.D{
+    width:100%;
+    height:60%;
+    margin-top:-3%;
+    font-size: 1.7rem;
+    background-color: hotpink;
+    color: black;
+}
+#category{
+    display: inline-block;
+    height:12%;
+    width:45%;
+    margin-top: 10%;
+   
+}
+#Category-heading{
+    font-size: 1.9rem;
+}
+#cat{
+    display: inline-block;
+    margin-left:30%;
+    margin-top: -1%;
+    width:20%;
+    height:32%;
+    padding-left: 5%;
+    font-size: 1.5rem;
+    color:black;
+    border: 1px solid black;
+    background-color: red;
+}
+#T{
+    display: block;
+    border: 1px solid black;
+}
+#T p{
+    display: inline-block;
+}
+#T h3{
+    display: inline-block;
+}
+#TASK{
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-top: 2%;
+    width:30%;
+    padding-left:10px ;
+    font-size: 1.3rem;
+}
+#cross-icon{
+    margin-top: -2%;
+    height:20%;
+    width: 10%;
+}
+#description{
+    height: 10%;
+    width:50%;
+    font-size: 1.3rem;
+    color: black;
+    outline: none;
+}
+#Description{
+    position: absolute;
+    display: inline-block;
+}
+#left{
+    display: inline-block;
+    margin-left: 2%;
+    color:darkgrey;
+    margin-top:-1%;
+    font-size: 1.5rem;
+}
