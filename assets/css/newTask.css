@@ -28,10 +28,126 @@ body{
     font-weight: 700;
     text-decoration: underline;
 }
-#description{
+.description-heading{
+    display: inline-block;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 0%;
+    font-size: 1.5rem;
+    color:#fbf7f0;
+}
+.description{
+    display: inline-block;
+    height: 13%;
+    width:90%;
+    margin-left:10%;
+    font-size: 1.5rem;
+    color:#fbf7f0;
+    background-color: #1f3c88;
+}
+.description:hover{
+    display: inline-block;
+    height: 13%;
+    width:90%;
+    margin-left:10%;
+    font-size: 1.5rem;
+    color:#fbf7f0;
+    background-color: #1f3c88;
+}
+
+.D{
+    width:45%;
+    height:10%;
+    margin-left: 10%;
+    font-size: 1.7rem;
+    background-color: #4b4848;
+    color: white;
+}
+.date{
+    display: inline-block;
+    width:44.6%;
+    height:10%;
+    font-size: 1.7rem;
+    background-color: #79a8a9;
+    color: wheat;
+    margin-left: -.4%;
+    margin-top: -.5%;
+}
+#category-date-heading{
+    display: inline-block;
+    height:4%;
+    width:90%;
+    margin-left: 10%;
+    padding-top: 1%;
+   padding-bottom: 1%;
+   border: 2px dotted black;
+}
+#chooose-category{
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-left: 5%;
+    margin-top: -2%;
+    color: #14274e;
+
+}
+#due-date{
+    font-weight: bolder;
+    margin-left: 31%;
+    font-size: 1.8rem;
+    color: #14274e;
+}
+#submit-task{
+    margin-top: 5%;
+    margin-left: 30%;
     height: 10%;
-    width:50%;
-    font-size: 1.3rem;
-    color: black;
-    outline: none;
+    width: 40%;
+    background-color: #1c2b2d;
+    color: white;
+    font-size: 2rem;
+    padding-left: 10%;
+}
+#add-button-image{
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 3.5%;
+    height: 5%;
+    width:5%;
+    border-radius: 50%;
+}
+#time{
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    margin-left:5%;
+    font-size: 2rem;
+    color: #ebebeb;
+    background-color: #495464;
+}
+#due-time{
+    display: flex;
+    height:10%;
+    margin-left: 10%;
+    margin-top: 3%;
+    width:90%;
+    border: 2px dotted #1c2b2d;
+    background-color: #495464;
+
+}
+#time-image{
+    position: absolute;
+    margin-left:2%;
+    margin-top: .3%;
+    display: inline-block;
+    height:8%;
+    width: 6%;
+}
+#time-heading{
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 2%;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    background-color: #495464;
+
 }

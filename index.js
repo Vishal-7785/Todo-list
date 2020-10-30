@@ -11,20 +11,17 @@ app.use(express.static('assets'))
 
 
  app.get('/',function(req,res){
-    return res.render('profile',{
+    return res.render('home',{
         title: "Todo profile"
     });
  });
- app.get('/profile',function(req,res){
-    return res.render('newTask',{
-        title: "Todo profile"
-    });
- });
- app.post('/create-work',function(req,res){
+ app.post('/newTask/createWork',function(req,res){
+    console.log('Bcbjs')
     Todo.create({
-        task: req.body.task,
-        date: req.body.date,
-        category: req.body.category
+        task:     req.body.task,
+        date:     req.body.date,
+        category: req.body.category,
+        time:     req.body.time
     }, function(err,newTask){
         if(err){
             console.log(`Error in creating a task: ${err}`);
@@ -33,16 +30,29 @@ app.use(express.static('assets'))
         return res.redirect('back');
 
     });
-});
-app.get('/delete/work/',function(req,res){
-      Todo.findByIdAndDelete(req.query.id,function(err){
-          if(err){
-              console.log(`Error in deleting task: ${err}`);
-              return res.redirect('back');
-          }
-          return res.redirect('back');
-      });
-});
+ });
+ app.get('/newTask',function(req,res){
+     return res.render('newTask',{
+         title: "New Task"
+     });
+ });
+//  app.post('/Create-Work',function(req,res){
+//      console.log('Bcbjs')
+//     Todo.create({
+//         task:     req.body.task,
+//         date:     req.body.date,
+//         category: req.body.category,
+//         time:     req.body.time
+//     }, function(err,newTask){
+//         if(err){
+//             console.log(`Error in creating a task: ${err}`);
+//         }
+//         console.log('*****',newTask);
+//         return res.redirect('back');
+
+//     });
+// });
+
 
 app.listen(port,function(err){
     if(err){

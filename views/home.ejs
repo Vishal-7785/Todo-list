@@ -1,60 +1,42 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/home.css">
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <div id ="container">
-            
-                <span id = "heading">TODO APP</span>
-            <div id = "form-container">
-                <form  id = "FORM" action="/create-work" method ="POST">
-                 <input  id= "description" type="text" name ="task" placeholder="What do you need to do" >  
-                
-                 <div id ="category">
-                 <label id= "Category-heading" for="cars">Choose a category:</label>
-                 <br>
-                 <select name="category" class="D" id="cars">
-                     <option  value="Personal">Personal</option>
-                     <option value="Work">Work</option>
-                     <option value="School">School</option>
-                     <option value="Other">Other</option>
-                
-                 </select>
-                 </div>
-                
-                   <input id="date"  type="date" name="date" placeholder="dd/mm/yy">
-               
-                   <input id="add" type = "submit" value = "ADD TASK">
-                   <input id="delete" type = "submit" value = "Delete TASK">
+</head>
+<body>
 
-                  
-
-                </form>
-                <div id=tasks>
-                  <% for(let i of TODO){%>
-                    <div id="T">
-                      <a href = "/delete/work/?id=<%= i._id%>"> <img id="cross-icon" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828665.svg" alt="cross"></a>
-                     <p id="TASK">
-                       <%= i.task%>
-                       <br>
-                     <small> <i class="fa fa-car" style="font-size:20px;"></i>&nbsp&nbsp<%=  i.date%> </small>
-                     </p>
-                     <div id="cat">
-                        <%= i.category %>
-                     </div>
-                    </div>
-                    <%}
-                  
-                  %>
+            <div id = "container">
+                <img class="todo-icon animate__animated animate__heartBeat animate__infinite" src="https://t4.ftcdn.net/jpg/02/04/23/11/240_F_204231168_bcZftnTPMS34zMClK03XzShYTORIwQYN.jpg" alt="icon">
+                <h1 class ="heading animate__animated animate__rollIn"> TODO APP</h1>
+                <div id ="task-container" >
+                    <h2 class="your-tasks animate__animated animate__headShake animate__infinite animate__slow"> Your Tasks</h2>
+                   <div class ="personal-task ">
+                   <a class="work-heading" href=""> Personal</a>
+                  <a href=""> <img id="work-image" src="https://www.flaticon.com/svg/static/icons/svg/3048/3048122.svg" alt="work-image"></a>
+                   </div>
+                   <div class="school-task">
+                   <a class="work-heading" href=""> College</a>
+                 <a href="">  <img id="work-image" src="https://www.flaticon.com/svg/static/icons/svg/569/569025.svg" alt="work-image"></a>
+             </div>
+                <div class="work-task ">
+                <a class="work-heading" href=""> Work</a>
+               <a href=""> <img id="work-image" src="https://www.flaticon.com/premium-icon/icons/svg/3264/3264760.svg" alt="work-image"></a>
+                       
                 </div>
-                
-        </div>
+                <div class="other-task">
+                <a class="work-heading" href=""> Other</a>
+               <a href=""> <img id="work-image" src="https://www.flaticon.com/svg/static/icons/svg/75/75406.svg" alt="work-image"></a>
+                </div>
+               <form action="/newTask" method="GET">
+                <input id="add-task-button" type="submit" value="Add new task">
+               </form>
+                </div>
+            </div>
 
-       
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
+</body>
 </html>

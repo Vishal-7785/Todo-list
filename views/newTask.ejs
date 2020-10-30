@@ -11,8 +11,30 @@
             <img class="todo-icon animate__animated animate__heartBeat animate__infinite" src="https://t4.ftcdn.net/jpg/02/04/23/11/240_F_204231168_bcZftnTPMS34zMClK03XzShYTORIwQYN.jpg" alt="icon">
                 <h1 class ="heading animate__animated animate__rollIn"> TODO APP</h1>
                 <div class ="form-container">
-                    <form action="">
-                        <input  id= "description" type="text" name ="task" placeholder="What do you need to do" >  
+                    <form action="/newTask/createWork" method="POST">  
+                               <h2 class ="description-heading">Description-:</h2>
+                               <input  class= "description" id="cars" type="text" name ="task" placeholder="What do you need to do" > 
+                         
+                    
+                        <div id="category-date-heading">
+                            <span id="chooose-category"> Category:</span>
+                            <span id="due-date">Due date:</span>
+                        </div>
+                       
+                        <select name="category" class="D" id="cars">
+                            <option  value="Personal">Personal</option>
+                            <option value="Work">Work</option>
+                            <option value="School">School</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <input class="date"  type="date" name="date" placeholder="dd/mm/yy">
+                        <div id="due-time">
+                            <img id="time-image" src="https://www.flaticon.com/svg/static/icons/svg/3003/3003126.svg">
+                            <span id="time-heading">Due Time =></span>
+                            <input id="time" type="time" name="time" placeholder="10 08 04">
+                            </div>
+                        <img id="add-button-image" src="https://as2.ftcdn.net/jpg/01/78/97/37/500_F_178973720_C2JVZoe4Aye3KcZoWzcHEgcppNSveALg.jpg">
+                        <input id="submit-task" type="submit" value="ADD TASK">
                     </form>
                 </div>
         </div>
