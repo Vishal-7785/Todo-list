@@ -7,7 +7,7 @@ body{
     height: 90%;
     margin-top:5%;
     margin-left:25%;
-    background-color:#f4abc4;
+    background-color:#c71c58;
     border: 3px dashed #060930;
     border-radius: 10%;
 
@@ -60,7 +60,7 @@ body{
     height:10%;
     margin-left: 10%;
     font-size: 1.7rem;
-    background-color: #4b4848;
+    background-color: #79a8a9;
     color: white;
 }
 .date{

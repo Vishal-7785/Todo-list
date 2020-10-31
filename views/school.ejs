@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+   <link rel="stylesheet" href="./css/school.css">
+    </head>
+    <body>
+     
+
+        <div id="container">
+            <img class="todo-icon animate__animated animate__heartBeat animate__infinite" src="https://t4.ftcdn.net/jpg/02/98/04/15/240_F_298041507_ZfWiLTLhbXdEK7gaSCW9k6o8jJWE3NVT.jpg" alt="icon">
+                <h1 class ="heading animate__animated animate__rollIn"> TODO APP</h1>
+                <div id="t"></div>
+                <p id="personal-tasks-heading">  Your School Tasks</p>
+        <div>
+            <form action="/school/delete-task/" method="POST">
+                <% for(let i of TODO){%>
+            <div><% if(i.category=== 'School'){%>
+                <div class="tasks">
+                    <input id="checkbox" name ="checkbox" value="<%=i._id%>" type="checkBox">
+                    <div id="image">
+                        <img id="personal-image" src="https://as2.ftcdn.net/jpg/01/18/03/33/500_F_118033377_JKQA3UFE4joJ1k67dNoSmmoG4EsQf9Ho.jpg" alt="personal">
+                    </div>
+                    <div class="task-description">
+                        <p class="task">
+                            <%= i.task %> 
+                        </p>
+                        <sub class="DATE">
+                            <img id="icon" src="https://www.flaticon.com/premium-icon/icons/svg/2134/2134442.svg">
+                            <span id ="task-date"> <%= i.date %> </span>
+                        </sub>
+                        <div id="TIME"> 
+                            <%= i.time %> 
+                        </div>
+                    </div>
+                    <div class="category">
+                    <span id="category-text"> <%=  i.category %> </span>
+                    </div>
+                </div>
+                <%}%>
+            </div>
+                <%}%>
+        </div>
+        <div id="delete-button-container">
+            <img id="delete-button-image" src="https://as1.ftcdn.net/jpg/02/76/19/96/500_F_276199650_Hs5K3QnXm9ZMBLd3DT44YcdWUIf8GHxO.jpg" alt="">
+            <button id="delete-button">
+                Delete Task
+            </button>
+        </form>
+        <form action="/personal/back" method="GET">
+            <button id ="back-button" > Back</button>
+            </form>
+        </div>
+            </div>  
+    </body>
+</html>
