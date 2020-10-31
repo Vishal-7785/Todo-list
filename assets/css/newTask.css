@@ -1,5 +1,8 @@
 body{
     background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 #container{
@@ -10,7 +13,9 @@ body{
     background-color:#c71c58;
     border: 3px dashed #060930;
     border-radius: 10%;
-
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRMYHSggGBolGxUTITEhJSkrLi4uFx8zODMsNygtLjcBCgoKDQ0NDg0NDisZFRkrLS0rKy0rKystLSsrKysrKysrLSstKysrKy0rKysrKysrKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQMABv/EABkQAQEBAQEBAAAAAAAAAAAAAAABERJRkf/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgUE/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwDwEKDCjqvEUOBDiqcaRnDiK0hxnDgrSHGcOIrSFAhwU4UCFEUoQxYik5HaCucgjkqpVEo1alEShStCqiUKVCtM6NClQqsjQpUKA0KdCiBRpUKINRagOhQYUZaOHGcOCtIcZw5RWkOM4URWsKM5TlFaSlAhSorSFGcpSopxZQlKVFJdDV0C12jrtBdTU1NVFo11o2qjrRtdaNqo60KtoWqiULVtG1WRoUrQoiUKtGqg0atG0EqOqCOhQIsrDbSHGcKA0hxnKUorWU5WUpyitJTlZSnKitJTlZSlKK1lWVnKUqK01dZ6uorTV1nq6geu0NdoFqaOpqotqWpaNqoto2paNqotoWutG1US0bXWharLrQtW0bVRLRtdaNoiWja60bQdU1LU0HSlKzlKVlppCjOUpRWspSs5SlRWspSspTlBrKUrKUpRWspSspSlRWspSspVlRWsq6z1dQaa7Werop67Q12iFrtDU0CtS0dG1UK0bUtG1pFtG1LRtEdaNrrQtVNW0LXWjaqOtG1LRtEdaNdaNoLaOutTSomlKzlKVittJSlZylKK0lKVnKUqjWUpWUpSoNZSlZSlKVWspSspSlRWurrLVlQa6ustXRWmrrPXaDTXaz12gepoaloh6loamgVqWjo2qhWjaNo2qi2jalo2qLaNqWjaMraNqWjaoto2paloLamjamojtXQlWVhtpKUrOVZQaylKylKVRrKUrKUpRWspSspVlBrKUrKVZUVrq6y0tBpq6y1dBrrtZ67pFadO1nrtEPU0NTVD1LQ6TQO0bRtS0QrRtG0bVQrRtS0bVoto2paNpRbUtS0bSpFtG1LU1KRdTU1NKRJSlZ6srLTSUpWcqyg1lKVlKUqjSUpWUpaDWVZWUpSg0lLWWrKK11dZauoNenaz12g112s9d0DTpNDXaB6nQdO0D6S0NTQK1LRtTpUK0bRtS0CtG1LRtEW1LRtS0FtHUtS0FtHUtS1BbU1NTSiSlKz1ZWWmkpSs9WVRpKWs5VlEayrrPVlUaaUrOV2g1lXWcq6K0lXWeu0Guu1nrtBprtZ6ugeu1nrtQaamhrtULU0dTQK1NG1NELUtHUtBdTU0dAtG1LUtBdG1LU1BbU0bU0Ftdo6mortWUNWVFPSlZ6Uoh6UrOVdUaSlKzlXVGkqys5V0Gkq6z1dA9XQ12g012hrtA9doa7QPXaGu0D1NHU0C12jqaBalo67QW1NS0dArU0dS0C0bU1LUFtHXWjoLalqWpqC6mpqaK5ZQ1ZWap6Whqyqh6uhKqhylrOVdVGmrrOUtA9doaugeroa7QPXaGu1Q9doauXxAtdqZfL8TL5fgFrtGpoFqampoFqaOu0FtTU1NBdS1NS0F1LUS1FXRtdqA61HVNZo7XalqIrljnCqquVHaSOUJdc5UXV1zlRXa5wLrtVwJrtVwO13V9rnAvd9v1O77frnAmu1zgdqa5wOTXOBNRzhU1HOQdoq4BrnOTVHU1zmRK5HIr//Z');
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .todo-icon{
     height:15%;
@@ -23,7 +28,7 @@ body{
     display: inline-block;
     margin-left: 10%;
     margin-top:0%;
-    color: #1a1c20;
+    color: #f1f6f9;
     font-size: 4rem;
     font-weight: 700;
     text-decoration: underline;
@@ -34,7 +39,7 @@ body{
     margin-left: 8%;
     margin-top: 0%;
     font-size: 1.5rem;
-    color:#fbf7f0;
+    color:#440047;
 }
 .description{
     display: inline-block;
@@ -42,8 +47,8 @@ body{
     width:90%;
     margin-left:10%;
     font-size: 1.5rem;
-    color:#fbf7f0;
-    background-color: #1f3c88;
+    color:#393b44;
+    background-color: #ffc1f3;
 }
 .description:hover{
     display: inline-block;
@@ -51,8 +56,8 @@ body{
     width:90%;
     margin-left:10%;
     font-size: 1.5rem;
-    color:#fbf7f0;
-    background-color: #1f3c88;
+    color:#393b44;
+    background-color: #ffc1f3;
 }
 
 .D{
@@ -60,16 +65,16 @@ body{
     height:10%;
     margin-left: 10%;
     font-size: 1.7rem;
-    background-color: #79a8a9;
-    color: white;
+    background-color: #ffc1f3;
+    color: 393b44;
 }
 .date{
     display: inline-block;
     width:44.6%;
     height:10%;
     font-size: 1.7rem;
-    background-color: #79a8a9;
-    color: wheat;
+    background-color: #ffc1f3;
+    color: 393b44;
     margin-left: -.4%;
     margin-top: -.5%;
 }
@@ -88,23 +93,24 @@ body{
     font-weight: bolder;
     margin-left: 5%;
     margin-top: -2%;
-    color: #14274e;
+    color: #f1f6f9;
 
 }
 #due-date{
     font-weight: bolder;
     margin-left: 31%;
     font-size: 1.8rem;
-    color: #14274e;
+    color: #f1f6f9;
 }
 #submit-task{
     margin-top: 5%;
     margin-left: 30%;
     height: 10%;
     width: 40%;
-    background-color: #1c2b2d;
-    color: white;
+    background-color: #776d8a;
+    color: #440047;
     font-size: 2rem;
+    font-weight: bold;
     padding-left: 10%;
 }
 #add-button-image{
@@ -121,8 +127,8 @@ body{
     width: 50%;
     margin-left:5%;
     font-size: 2rem;
-    color: #ebebeb;
-    background-color: #495464;
+    color: #1c2b2d;
+    background-color: #ffc1f3;
 }
 #due-time{
     display: flex;
@@ -131,7 +137,7 @@ body{
     margin-top: 3%;
     width:90%;
     border: 2px dotted #1c2b2d;
-    background-color: #495464;
+    background-color: #ffc1f3;
 
 }
 #time-image{
@@ -148,6 +154,6 @@ body{
     margin-top: 2%;
     font-size: 1.8rem;
     font-weight: bolder;
-    background-color: #495464;
+    background-color: #ffc1f3;
 
 }

@@ -64,6 +64,37 @@ app.use(express.static('assets'))
     });
   
 });
+
+app.get('/work',function(req,res){
+    Todo.find({},function(err,todo){
+       if(err){
+           console.log('Error in fetching tasks from db');
+           return;
+       }
+       return res.render('work',{
+           title: "Personal Tasks",
+           TODO: todo
+       });
+
+    });
+  
+});
+
+app.get('/other',function(req,res){
+    Todo.find({},function(err,todo){
+       if(err){
+           console.log('Error in fetching tasks from db');
+           return;
+       }
+       return res.render('other',{
+           title: "Personal Tasks",
+           TODO: todo
+       });
+
+    });
+  
+});
+
 app.post('/personal/delete-task',function(req,res){
        console.log(req.body.checkbox);
        const check = req.body.checkbox;
@@ -88,6 +119,33 @@ app.post('/school/delete-task',function(req,res){
     });
    
 });
+
+app.post('/other/delete-task',function(req,res){
+    console.log(req.body.checkbox);
+    const check = req.body.checkbox;
+    Todo.findByIdAndDelete(check,function(err){
+     if(err){
+         console.log('Error in deleting tasks from db',err);
+         return;
+     }
+     return res.redirect('/other');
+    });
+   
+});
+
+app.post('/work/delete-task',function(req,res){
+    console.log(req.body.checkbox);
+    const check = req.body.checkbox;
+    Todo.findByIdAndDelete(check,function(err){
+     if(err){
+         console.log('Error in deleting tasks from db',err);
+         return;
+     }
+     return res.redirect('/work');
+    });
+   
+});
+
  app.get('/newTask',function(req,res){
     
      return res.render('newTask',{
