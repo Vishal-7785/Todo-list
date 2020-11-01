@@ -1,32 +1,46 @@
 <html>
     <head>
+    <!-- Linking animate.css so that we can use animations in our project -->      
         <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
+        <!-- linking a css file for this page -->    
    <link rel="stylesheet" href="./css/other.css">
     </head>
     <body>
      
-
+          <!-- this div is the container div..it contains everything needed in this page -->    
         <div id="container">
+           <!-- Adding an icon to top-left corner of our app and giving it an heartbeat animation for infinite time-->                      
             <img class="todo-icon animate__animated animate__heartBeat animate__infinite" src="https://t4.ftcdn.net/jpg/02/98/04/15/240_F_298041507_ZfWiLTLhbXdEK7gaSCW9k6o8jJWE3NVT.jpg" alt="icon">
-                <h1 class ="heading animate__animated animate__rollIn"> TODO APP</h1>
+                  <!-- Giving a heading and to heading I have added an rollIn animation for one time only -->                           
+            <h1 class ="heading animate__animated animate__rollIn"> TODO APP</h1>
+            <!-- This is just and horizontal line which I have added for styling purposes -->
                 <div id="t"></div>
+                <!-- this is the heading for your Other tasks -->
                 <p id="personal-tasks-heading">  Your Other Tasks</p>
         <div>
+            <!-- this is the form for deletion of tasks I have added a checkbox which when ticked and submit button clicked will delete the corresponding task -->
             <form action="/other/delete-task/" method="POST">
+                <!-- this is a loop for all tasks you have -->
                 <% for(let i of TODO){%>
+                    <!-- I want only those tasks whose category is Other so I have applied a check here -->
             <div><% if(i.category=== 'Other'){%>
+                <!-- this is the div which will be containing one task -->
                 <div class="tasks">
+                    <!-- this is the checkbox for deleting purpose -->
                     <input id="checkbox" name ="checkbox" value="<%=i._id%>" type="checkBox">
+                    <!-- this is a div which will contain an image for your other task -->
                     <div id="image">
-                        <img id="personal-image" src="https://as2.ftcdn.net/jpg/01/18/03/33/500_F_118033377_JKQA3UFE4joJ1k67dNoSmmoG4EsQf9Ho.jpg" alt="personal">
+                        <img id="personal-image" src="https://www.flaticon.com/svg/static/icons/svg/3571/3571460.svg" alt="personal">
                     </div>
+                    <!-- this div will contain the description of your task -->
                     <div class="task-description">
                         <p class="task">
                             <%= i.task %> 
                         </p>
+                        <!-- The date of the task will be in subscript -->
                         <sub class="DATE">
                             <img id="icon" src="https://www.flaticon.com/premium-icon/icons/svg/2134/2134442.svg">
                             <span id ="task-date"> <%= i.date %> </span>
@@ -35,6 +49,7 @@
                             <%= i.time %> 
                         </div>
                     </div>
+                    <!-- On right side we will be having category of our task -->
                     <div class="category">
                     <span id="category-text"> <%=  i.category %> </span>
                     </div>
@@ -43,12 +58,15 @@
             </div>
                 <%}%>
         </div>
+        <!-- This will contain your delete button -->
         <div id="delete-button-container">
+            <!-- I have added an image for delete button from flat icon -->
             <img id="delete-button-image" src="https://as1.ftcdn.net/jpg/02/76/19/96/500_F_276199650_Hs5K3QnXm9ZMBLd3DT44YcdWUIf8GHxO.jpg" alt="">
             <button id="delete-button">
                 Delete Task
             </button>
         </form>
+        <!-- this is the back button which will take you to the home page -->
         <form action="/personal/back" method="GET">
             <button id ="back-button" > Back</button>
             </form>

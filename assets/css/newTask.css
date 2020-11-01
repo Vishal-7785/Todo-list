@@ -4,7 +4,6 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
 }
-
 #container{
     width:50%;
     height: 90%;
@@ -125,7 +124,7 @@ body{
     display: inline-block;
     height: 100%;
     width: 50%;
-    margin-left:5%;
+    margin-left:17%;
     font-size: 2rem;
     color: #1c2b2d;
     background-color: #ffc1f3;
@@ -142,7 +141,7 @@ body{
 }
 #time-image{
     position: absolute;
-    margin-left:2%;
+    margin-left:0%;
     margin-top: .3%;
     display: inline-block;
     height:8%;
@@ -150,10 +149,57 @@ body{
 }
 #time-heading{
     display: inline-block;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: 2%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bolder;
     background-color: #ffc1f3;
 
+}
+@media screen and (max-width:1090px){
+    #container{
+        width:100%;
+        margin-left: 0%;
+    }
+    .description-heading{
+        margin-left: 14%;
+    }
+    
+#add-button-image{
+        position: absolute;
+        margin-left: 32%;
+        margin-top: 6.5%;
+        height: 5%;
+        width: 5%;
+        border-radius: 50%;
+    
+    }
+    #time {
+        display: inline-block;
+        height: 100%;
+        width: 58%;
+        margin-left: 20%;
+        font-size: 2rem;
+        color: #1c2b2d;
+        background-color: #ffc1f3;
+    }
+    
+    
+}
+@media screen and (max-width:1090px){
+    #submit-task {
+        margin-top: 5%;
+        margin-left: 31%;
+        height: 10%;
+        width: 33%;
+        background-color: #776d8a;
+        color: #440047;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 10%;
+    }
+    #time-heading{
+        font-size: 1.4rem;
+
+    }
 }

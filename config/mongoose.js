@@ -1,3 +1,4 @@
+// Importing mongoose
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/todo_app_db');
 // Acquiring the connection to check if it was successfull

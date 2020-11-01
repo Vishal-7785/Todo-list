@@ -1,37 +1,61 @@
 <html>
 <head>
+   
+  <!-- Linking animate.css so that we can use animations in our project -->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <!-- linking bootstrap file here -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- linking css file for this home page -->
     <link rel="stylesheet" href="./css/profile.css">
+    <!-- linking font-awesome file to use icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+            <!-- this div is the container div..it contains everything needed in our todo app -->
             <div id = "container">
+              <!-- Adding an icon to top-left corner of our app and giving it an heartbeat animation for infinite time-->
                 <img class="todo-icon animate__animated animate__heartBeat animate__infinite" src="https://t4.ftcdn.net/jpg/02/98/04/15/240_F_298041507_ZfWiLTLhbXdEK7gaSCW9k6o8jJWE3NVT.jpg" alt="icon">
+                <!-- Giving a heading and to heading I have added an rollIn animation for one time only -->
                 <h1 class ="heading animate__animated animate__rollIn"> TODO APP</h1>
+                <!-- This container is the task container it will contain all the different variety of tasks u want to perform -->
                 <div id ="task-container" >
+                  <!-- A heading which will indicate users about their tasks -->
                     <h2 class="your-tasks animate__animated animate__headShake animate__infinite animate__slow"> Your Tasks</h2>
-                   <div class ="personal-task ">
+                   <!-- This container will contain your personal tasks -->
+                    <div class ="personal-task ">
+                      <!-- A link which will redirect you to personal tasks page -->
                    <a class="work-heading" href="/personal"> Personal</a>
+                   <!-- An image for your personal tasks,, You can also go to your personal tasks page as I have enclosed the image tag inside an a tag -->
                   <a href="/personal"> <img id="work-image" src="https://www.flaticon.com/svg/static/icons/svg/3048/3048122.svg" alt="work-image"></a>
                    </div>
+                     <!-- This container will contain your school tasks -->
                    <div class="school-task">
+                      <!-- A link which will redirect you to school tasks page -->
                    <a class="work-heading" href="/school"> School</a>
+                    <!-- An image for your school tasks,, You can also go to your school tasks page as I have enclosed the image tag inside an a tag -->                  
                  <a href="/school">  <img id="work-image" src="https://www.flaticon.com/svg/static/icons/svg/569/569025.svg" alt="work-image"></a>
              </div>
+               <!-- This container will contain your work tasks -->
                 <div class="work-task ">
+                <!-- A link which will redirect you to work tasks page -->
                 <a class="work-heading" href="/work"> Work</a>
-               <a href="/work"> <img id="work-image" src="https://www.flaticon.com/premium-icon/icons/svg/3264/3264760.svg" alt="work-image"></a>
+                 <!-- An image for your work tasks,, You can also go to your work tasks page as I have enclosed the image tag inside an a tag -->                  
+               <a href="/work"> <img id="work-image" src="https://www.flaticon.com/svg/static/icons/svg/75/75406.svg" alt="work-image"></a>
                        
                 </div>
+                 <!-- This container will contain your other tasks -->              
                 <div class="other-task">
+                 <!-- A link which will redirect you to other tasks page -->                 
                 <a class="work-heading" href="/other"> Other</a>
+                  <!-- An image for your other tasks,, You can also go to your other tasks page as I have enclosed the image tag inside an a tag -->                                 
                <a href="/other"> <img id="work-image" src="https://www.flaticon.com/svg/static/icons/svg/75/75406.svg" alt="work-image"></a>
                 </div>
+                <!-- here we are adding a form so that on submitting this we can go to our add new task page -->
                <form action="/newTask" method="GET">
+                <!-- A button which will submit this form -->
                 <input id="add-task-button" type="submit" value="Add new task">
                </form>
                 </div>
