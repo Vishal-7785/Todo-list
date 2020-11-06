@@ -203,3 +203,9 @@ body{
 
     }
 }
+@media screen and(mac-width:600px){
+    .date{
+        margin-left: -50%;
+        width:40%;
+    }
+}

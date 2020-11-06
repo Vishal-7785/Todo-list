@@ -164,12 +164,12 @@ app.post('/work/delete-task',function(req,res){
    
 });
 
-//  app.get('/newTask',function(req,res){
+     app.get('/newTask',function(req,res){
     
-//      return res.render('newTask',{
-//          title: "New Task"
-//      });
-//  });
+        return res.render('newTask',{
+       title: "New Task"
+       });
+      });
 
 // Starting the server
 
