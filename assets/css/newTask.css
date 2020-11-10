@@ -194,18 +194,35 @@ body{
         width: 33%;
         background-color: #776d8a;
         color: #440047;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         font-weight: bold;
-        padding-left: 10%;
+        padding-left: 5%;
     }
     #time-heading{
         font-size: 1.4rem;
 
     }
+
+    .description{
+        height: 9%;
+    }
+    .D{
+        height: 7%;
+    }
+    .date{
+        height: 7%;
+    }
+    #due-time{
+        height: 7%;
+    }
+    
 }
-@media screen and(mac-width:600px){
+@media screen and(max-width:600px){
     .date{
         margin-left: -50%;
         width:40%;
     }
+  
+    
+
 }
