@@ -136,12 +136,148 @@ body{
 @media screen and (max-width:1000px){
     #container{
         width:100%;
-    /* height: 90%; */
+     height: 100%;
     margin-top:0%;
     margin-left:0%;    
+    }
+    .school-task{
+        height: 30%;
+        width: 25%;
+    }
+    .work-task{
+        height:30%;
+        width:25%;
+        margin-left:20%;
+
+    }
+    .other-task{
+        height: 30%;
+        width: 25%;
+    }
+    .personal-task{
+        height: 30%;
+        width: 25%;
+        margin-top: 2%;
+        margin-left:20%;    
+    }
+    #add-task-button{
+        margin-left: 38%;
+        margin-top: 0%;
+        font-size: 1.7rem;
+    }
+    .your-tasks{
+        margin-left: 39%;
+        margin-top: -2%;
     }
     .todo-icon{
         margin-left: 9%;
     }
-  
+    .work-heading{
+        margin-left: 25%;
+       
+    }
 }
+@media screen and (max-width:700px){
+    .school-task{
+        height: 30%;
+        width: 30%;
+    }
+    .work-task{
+        height:30%;
+        width:30%;
+        margin-left:20%;
+
+    }
+    .other-task{
+        height: 30%;
+        width: 30%;
+    }
+    .personal-task{
+        height: 30%;
+        width: 30%;    
+    }
+    #add-task-button{
+        margin-left: 38%;
+    }
+    .your-tasks{
+        margin-left: 39%;
+        margin-top: -2%;
+    }
+   
+    .work-heading{
+        margin-left: 25%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .heading{
+        font-size: 3rem;
+    }
+    .your-tasks{
+        font-size: 2rem;
+    }
+    .school-task{
+        height: 30%;
+        width: 35%;
+    }
+    .work-task{
+        height:30%;
+        width:35%;
+        margin-left:15%;
+
+    }
+    .other-task{
+        height: 30%;
+        width: 35%;
+    }
+    .personal-task{
+        height: 30%;
+        width: 35%;
+        margin-left: 15%;    
+    }
+    #add-task-button{
+        margin-left: 38%;
+        margin-top: 5%;
+    }
+}
+
+ @media screen and (max-width: 414px){
+    .personal-task{
+        height: 29%;
+        width: 39%;
+        margin-top: 14%
+    }
+    .school-task{
+        height: 29%;
+        width: 39%;
+    }
+    .work-task{
+        height: 29%;
+        width:39%;
+        margin-top: 11%;
+    }
+    .other-task{
+        height: 29%;
+        width: 39%;
+    }
+    #add-task-button{
+        margin-left: 38%;
+        margin-top: 11%;
+        font-size: 3rem;
+    }
+    .work-heading{
+        margin-left: 38%;
+        margin-top: 8%;
+    }
+
+.your-tasks{
+    margin-left: 39%;
+    font-size: 4rem;
+}
+.todo-icon{
+    margin-top: 4%;
+}
+
+}  
+
